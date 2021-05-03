@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Layout: Visualização de notas
+    Criado em: 06/07/2019 por Lucas Pereira -> 1 layout
+    Modificado em: 03/08/2019 por Lucas Pereira -> Cores, shapes e outros
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_principal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nome_disciplina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textAlignment="center"
+        android:background="@drawable/arredondado_superior_azul"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/branco"
+        android:textSize="13dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textStyle="bold"
+        android:text="MATÉRIA" />
+
+    <LinearLayout
+        android:id="@+id/layout_titulos_notas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="#EEE">
+
+        <TextView
+            android:id="@+id/titulo_1bim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:text="1º BIM." />
+
+        <TextView
+            android:id="@+id/titulo_2bim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:text="2º BIM." />
+
+        <TextView
+            android:id="@+id/titulo_media_final"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:text="MÉDIA FINAL" />
+
+        <TextView
+            android:id="@+id/titulo_exame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:text="EXAME FINAL" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_notas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="@color/cinzaFraco1">
+
+        <TextView
+            android:id="@+id/nota_1bim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:text="37" />
+
+        <TextView
+            android:id="@+id/nota_2bim"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:text="30" />
+
+        <TextView
+            android:id="@+id/media_final"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:text="25" />
+
+        <TextView
+            android:id="@+id/notas_nota_exame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_situacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/arredondado_inferior_cinza">
+
+        <TextView
+            android:id="@+id/situacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="SITUAÇÃO"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>

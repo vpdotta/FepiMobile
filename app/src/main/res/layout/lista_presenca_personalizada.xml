@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Layout: Visualização de notas
+    Criado em: 06/07/2019 por Lucas Pereira -> 1 layout
+    Modificado em: 03/08/2019 por Lucas Pereira -> Cores, shapes e outros
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_principal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nome_materia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textAlignment="center"
+        android:background="@drawable/arredondado_superior_azul"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/branco"
+        android:textSize="13dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textStyle="bold"
+        android:text="MATÉRIA" />
+
+    <LinearLayout
+        android:id="@+id/layout_titulos_presencas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="#EEE">
+
+        <TextView
+            android:id="@+id/titulo_mes1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:text="MES" />
+
+        <TextView
+            android:id="@+id/titulo_mes2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:text="MES" />
+
+        <TextView
+            android:id="@+id/titulo_mes3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:text="MES" />
+
+        <TextView
+            android:id="@+id/titulo_mes4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:text="MES" />
+
+        <TextView
+            android:id="@+id/titulo_mes5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:text="MES" />
+
+        <TextView
+            android:id="@+id/titulo_mes6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_notas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:background="@color/cinzaFraco1">
+
+        <TextView
+            android:id="@+id/faltas_mes1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/faltas_mes2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/faltas_mes3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/faltas_mes4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/faltas_mes5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/faltas_mes6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_inf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/arredondado_inferior_cinza">
+
+        <TextView
+            android:id="@+id/total_faltas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text="TOTAL DE FALTAS: "
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/qtd_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>

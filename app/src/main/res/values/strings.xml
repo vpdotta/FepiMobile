@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FEPI Mobile</string>
+    <string name="separador_superior_da_barra_de_notificacoes">Separador superior da barra de notificações</string>
+    <string name="logotipo_do_aplicativo">Logotipo do aplicativo FEPI Mobile</string>
+    <string name="plano_de_fundo_do_aplicativo_fepi_mobile">Plano de fundo do aplicativo FEPI Mobile</string>
+    <string name="txt_input_matricula">Matrícula</string>
+    <string name="txt_input_senha">Senha</string>
+    <string name="txt_btn_acessar">Acessar</string>
+    <string name="txt_duvidas_sugestoes">Dúvidas ou sugestões? Clique aqui!</string>
+
+    <!-- Fepi Carona -->
+    <string name="entrar">Entrar</string>
+    <string name="matricula">Matrícula</string>
+    <string name="fepi_centro_universit_rio_de_itajub">FEPI - Centro Universitário de Itajubá</string>
+    <string name="todo">TODO</string>
+</resources>

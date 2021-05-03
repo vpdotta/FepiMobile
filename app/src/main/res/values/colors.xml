@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cores padrões -->
+    <color name="colorPrimary">#3364A4</color>
+    <color name="colorPrimaryDark">#3064af</color>
+    <color name="colorAccent">#0D5D98</color>
+
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+
+    <!-- Gradiente -->
+    <color name="gradStart">#950D5D98</color>
+    <color name="gradEnd">#63C9FF</color>
+    <!-- Fim do gradiente -->
+
+    <!-- Cores FEPI -->
+    <color name="amareloFepiBarra">#FCCB3E</color>
+    <color name="azulFepiBarra">#3364A4</color>
+
+    <!-- Cores comuns -->
+    <color name="branco">#FFF</color>
+    <color name="followingBg">#49BEFF</color>
+    <color name="cinzaFraco1">#EEE</color>
+    <color name="cinzaFraco2">#EFEFEF</color>
+    <color name="cinzaFraco3">#DDD</color>
+
+    <!-- Fundo com transparencia -->
+    <color name="fundoPadrao">#993364AF</color>
+
+    <!-- Fepi Carona -->
+    <color name="cinza">#cccccc</color>
+    <color name="azul">#a6d6fc</color>
+    <color name="defaultBlue">#3F51B5</color>
+
+</resources>

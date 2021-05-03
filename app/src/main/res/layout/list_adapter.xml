@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_marginTop="15dp">
+
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="#ffffff"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:paddingLeft="5dp"
+        android:text="Nome usuário"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imgUser"
+        android:layout_toEndOf="@+id/imgUser" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtUser"
+        android:layout_toEndOf="@+id/txtUser"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp">
+
+        <RadioButton
+            android:id="@+id/radioValida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="onRadioButtonClicked"
+            android:textColor="#000"
+            android:text="Confirmar" />
+
+        <RadioButton
+            android:id="@+id/radioInvalida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="onRadioButtonClicked"
+            android:textColor="#000"
+            android:text="Cancelar" />
+
+    </RadioGroup>
+</RelativeLayout>

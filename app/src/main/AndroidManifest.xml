@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.fepi.si.academico">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/network_security_config" />
+
+        <activity android:name="br.fepi.si.academico.view.MenuActivity"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name="br.fepi.si.academico.view.NotasActivity" />
+        <activity android:name="br.fepi.si.academico.view.PresencaActivity" />
+        <activity android:name="br.fepi.si.academico.view.FinanceiroActivity" />
+        <activity android:name="br.fepi.si.academico.view.BoletoActivity" />
+
+        <activity
+            android:name="br.fepi.si.academico.view.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="br.fepi.si.carona.view.Tela_tipo_usuario" />
+        <activity android:name="br.fepi.si.carona.view.Tela_motorista" />
+        <activity android:name="br.fepi.si.carona.view.Tela_passageiro" />
+        <activity android:name="br.fepi.si.carona.view.Tela_veiculo" />
+        <activity android:name="br.fepi.si.carona.view.Tela_cnh" />
+        <activity android:name="br.fepi.si.carona.view.Tela_solicita"/>
+        <activity android:name="br.fepi.si.carona.view.Tela_solicitacoes_pendentes" />
+        <activity android:name="br.fepi.si.carona.view.Tela_validacao" />
+        <activity android:name="br.fepi.si.carona.view.Tela_carona" />
+        <activity android:name="br.fepi.si.carona.view.Tela_msg_inicio" />
+        <activity android:name="br.fepi.si.carona.view.Tela_msg_fim"></activity>
+    </application>
+
+</manifest>

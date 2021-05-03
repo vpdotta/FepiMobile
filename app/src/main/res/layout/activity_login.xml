@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.LoginActivity">
+
+    <!-- Layout transparente -->
+    <FrameLayout
+        android:id="@+id/background_transp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/fundo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/fundoPadrao"
+            android:contentDescription="@string/plano_de_fundo_do_aplicativo_fepi_mobile" />
+    </FrameLayout>
+
+    <!-- Barra superior semelhante ao do site -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:contentDescription="@string/separador_superior_da_barra_de_notificacoes"
+            android:id="@+id/barra_azul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/azulFepiBarra" />
+
+        <ImageView
+            android:contentDescription="@string/separador_superior_da_barra_de_notificacoes"
+            android:id="@+id/barra_amarela"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:src="@color/amareloFepiBarra" />
+    </LinearLayout>
+
+    <!-- Box para a LOGO -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/box_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:contentDescription="@string/logotipo_do_aplicativo"
+            android:id="@+id/logo_fepi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_fepi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Box Dados para Login -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:background="@drawable/box_geral"
+        app:layout_constraintBottom_toTopOf="@+id/background_transp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_transp">
+
+        <!-- Input Matrícula -->
+        <EditText
+            android:id="@+id/input_matricula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/txt_input_matricula"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Autofill" />
+
+        <!-- Input Senha -->
+        <EditText
+            android:id="@+id/input_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/txt_input_senha"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/chk_salvar_credenciais"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_matricula"
+            tools:ignore="Autofill" />
+
+        <CheckBox
+            android:id="@+id/chk_salvar_credenciais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Manter credenciais salvas"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_acessar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_senha" />
+
+        <!-- Button para acessar-->
+        <Button
+            android:id="@+id/btn_acessar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/botao_arredondado_azul"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/txt_btn_acessar"
+            android:textColor="#FFF"
+            app:layout_constraintBottom_toTopOf="@id/link_signup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chk_salvar_credenciais" />
+
+        <!-- Text para tirar duvidas e dar sugestoes -->
+        <TextView
+            android:id="@+id/link_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="22dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Versão Beta - TCC\nDanilo Guimarães - Lucas Dotta"
+            android:textColor="#777"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_acessar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
